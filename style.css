@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(145deg,#2800a1,#9f0000e6);
+    padding: 10px;
+}
+.todo-app{
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 18px;
+}
+.todo-app h2{
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+.todo-app h2 img{
+    width: 30px;
+    margin-left: 10px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    margin-top: -30px;
+    position: relative;
+    
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #880da4c9;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+
+}
+.tl{
+    flex: 1;
+}
+ul li{
+    flex: 1;
+    list-style: none;
+    font-size: 17px;
+    position: relatie;
+    margin: ;
+}
+
+
+
+
+
+
+
+
+.wrapper{
+    display: flex;
+  }
+  .wrapper .static-txt{
+    color: #0d0d0d;
+    font-size: 22px;
+    font-weight: 500;
+  }
+  .wrapper .dynamic-txts{
+    margin-left: 7px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+    position: relative;
+  }
+  .dynamic-txts li{
+    list-style: none;
+    color: #490af4;
+    font-size:21px;
+    font-weight: 700;
+    position: relative;
+    top: -28px;
+    animation: slide 12s steps(4) infinite;
+  }
+  @keyframes slide {
+    100%{
+      top: -385px;
+    }
+  }
+  .dynamic-txts li span{
+    position: relative;
+    margin: 5px 0;
+    line-height: 90px;
+  }
+  .dynamic-txts li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 140%;
+    margin-top: 30px;
+    background: #ffffff;
+    border-left: 2px solid #430aff;
+    animation: typing 3s steps(10) infinite;
+  }
+  @keyframes typing {
+    40%, 60%{
+      left: calc(100% + 30px);
+    }
+    100%{
+      left: 0;
+    }
+  }
